@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from __future__ import with_statement, print_function
+from __future__ import print_function
 
 try:
     # python setup.py test
@@ -35,10 +35,7 @@ class PyTest(TestCommand):
 cmdclass = {}
 cmdclass['test'] = PyTest
 
-readme = 'README.md'
-if os.path.exists('README.rst'):
-    readme = 'README.rst'
-with open(readme, 'rb') as f:
+with open('README.md', 'rb') as f:
     long_description = f.read().decode('utf-8')
 
 with open('requirements.txt') as f:
@@ -46,14 +43,15 @@ with open('requirements.txt') as f:
 
 setup(
     name='wechatpy',
-    version='1.6.0',
+    version='1.7.0',
     author='messense',
     author_email='messense@icloud.com',
-    url='https://github.com/messense/wechatpy',
+    url='https://github.com/jxtech/wechatpy',
     packages=find_packages(),
-    keywords='WeChat, wexin, SDK',
-    description='wechatpy: WeChat SDK for Python',
+    keywords='WeChat, weixin, SDK',
+    description='WeChat SDK for Python',
     long_description=long_description,
+    long_description_content_type='text/markdown',
     install_requires=requirements,
     include_package_data=True,
     tests_require=[

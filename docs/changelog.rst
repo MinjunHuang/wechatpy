@@ -1,6 +1,24 @@
 Changelog
 ================
 
+Version 1.7.0
+-----------------
+
+Release on 2018-05-02
+
++ 三方平台增加 parse_message 处理消息，token cache 在处理消息时自动处理
++ 微信小店新增部分接口
++ 微信支付退款接口增加可选的 `notify_url` 参数
++ 群发接口增加 `send_ignore_reprint` 和 `client_msg_id` 参数
++ 微信支付增加转账到银行卡接口
+
+Version 1.6.1
+------------------
+
++ 增加微信开放平台代公众号 OAuth 网页授权相关接口
++ 微信支付 sandbox 环境 API 问题i修复
++ 增加微信支付 jssdk 的 sandbox API 支持
+
 Version 1.6.0
 ------------------
 
